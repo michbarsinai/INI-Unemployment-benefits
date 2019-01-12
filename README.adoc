@@ -1,0 +1,11 @@
+= https://datatagginglibrary.readthedocs.io/en/latest/[PolicyModels] model for Unemployment Benefits Under Israel's National Insurance Law
+
+Developed by Rotem Medzini and Michael Bar-Sinai
+
+[WARNING]
+NOT TO BE USED AS A LEGAL ADVICE
+
+Presented at the ESPAnet'17 conference, in http://mbarsinai.com/files/inii/ESPAnet17-Final.pdf[this poster].
+
+Interactive version may be found https://dvnweb-vm1.hmdc.harvard.edu/models/israel-unemployment/latest[here].
+
