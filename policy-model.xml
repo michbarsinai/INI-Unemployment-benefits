@@ -1,0 +1,20 @@
+<policy-model>
+  <title>Israeli Unemployment Benefits</title>
+  <version>0.2</version>
+  <date>2017-04-23</date>
+  <keywords>social policy, general</keywords>
+  <authors>
+    <person>
+      <name>Rotem Medzini</name>
+    </person>
+    <person>
+      <name>Michael Bar-Sinai</name>
+    </person>
+  </authors>
+  <model answers-order="yes-first">
+    <space root="DataTags">Israel-NI.ts</space>
+    <graph>Israel-NI.dg</graph>
+  </model>
+  <references>
+  </references>
+</policy-model>
