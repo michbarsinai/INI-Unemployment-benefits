@@ -1,5 +1,8 @@
 = https://datatagginglibrary.readthedocs.io/en/latest/[PolicyModels] model for Unemployment Benefits Under Israel's National Insurance Law
-
+ifdef::env-github[]
+:warning-caption: :warning:
+:tip-caption: :bulb:
+endif::[]
 Developed by Rotem Medzini and Michael Bar-Sinai
 
 [WARNING]
