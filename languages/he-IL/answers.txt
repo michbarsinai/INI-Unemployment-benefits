@@ -1,9 +1,0 @@
-25-28: 25-28
-28-35: 28-35
-35 and over: 35 and over
-35-45: 35-45
-45 and over: 45 and over
-Under 25: Under 25
-no: no
-under 35: under 35
-yes: yes

@@ -1,1 +1,0 @@
-Did you serve a mandatory military service?
