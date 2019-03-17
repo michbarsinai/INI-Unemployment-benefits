@@ -8,10 +8,10 @@
 Based on article 167 of the National Insurance law
 
 # DataTags/entitlements/capping/AverageDailyPay
-Average monthy pay divided by 25 (see article 167)
+Average monthly pay divided by 25 (see article 167)
 
 # DataTags/entitlements/capping/TwoThirdsAverageDailyPay
-Two thirds of average monthy pay divided by 25 (see article 167)
+Two thirds of average monthly pay divided by 25 (see article 167)
 
 # DataTags/entitlements/numOfDays
 <-- TODO: describe DataTags/entitlements/numOfDays
@@ -120,4 +120,3 @@ Eligible for unemployment benefits
 
 # DataTags/assertions/dependents/ThreeOrMore
 <-- TODO: describe DataTags/assertions/dependents/ThreeOrMore
-

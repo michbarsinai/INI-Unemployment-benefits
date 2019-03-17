@@ -23,8 +23,8 @@ employmentStatus: one of Employed [Working, NIS paid for],
 entitlements: consists of capping, numOfDays.
 
 capping [Based on article 167 of the National Insurance law]: one of
-  AverageDailyPay[Average monthy pay divided by 25 (see article 167)],
-  TwoThirdsAverageDailyPay[Two thirds of average monthy pay divided by 25 (see article 167)].
+  AverageDailyPay[Average monthly pay divided by 25 (see article 167)],
+  TwoThirdsAverageDailyPay[Two thirds of average monthly pay divided by 25 (see article 167)].
 
 dependents: one of LessThanThree, ThreeOrMore.
 numOfDays: one of d50, d67, d100, d138, d175.
