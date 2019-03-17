@@ -12,7 +12,7 @@ Is the user covered?
         {text: Are you over 18?}
         {terms: }
         {answers:
-          {no: [call: eligibleMinorTest]}
+          {no: [call: prtEligibileMinorTest]}
           {yes: [>coverage-employment< ask:
               {text: Did your employer(s) in the last 12 months have to pay National Insurance?}
               {terms:
@@ -31,7 +31,7 @@ Is the user covered?
                       }
                       {answers:
                         {yes: [set: coverCause+=NationalService]}
-                        {no: [>coverage-nationalSvc/wed< ask:
+                        {no: [>coverage-nationalSvc-wed< ask:
                           {text: Are you a woman who served at least 6 months and got married within 30 days of your actual discharge?}
                           {answers:
                             {yes: [set: coverCause+=NationalService]}
@@ -54,9 +54,9 @@ Is the user covered?
       ]}
 }]
 
-[call: unemp-test]
-[end]
+[call: prtUnemplomentTest]
 
+[-->prtUnemplomentTest<
 <***********************
 Is the user Unemployed?
 ***********************>
@@ -92,7 +92,7 @@ Is the user Unemployed?
     }
   ]
   <* Qualification Period *>
-  [call: qualification-period]
+  [call: prtQualificationPeriod]
   [when:
     {qualificationPeriodCompleted=No: [reject: You did not complete your qualification period, and so not entitled to unemployment benefits.] }
   ]
@@ -179,19 +179,20 @@ Is the user Unemployed?
   [consider:
     {slot: numOfDays}
     {options:
-      {d138: [call: setCapping]}
-      {d175: [call: setCapping]}
+      {d138: [call: prtSetCapping]}
+      {d175: [call: prtSetCapping]}
     }
     {else:
       [set: capping=AverageDailyPay]
     }
   ]
 ]
-
+--]
 
 <*********************************>
 <* Helper sub-routins *>
 <*********************************>
+[-->prtSetCapping<
 [>setCapping< section:
   [ask:
     {text: Has it been more than 125 days since you started getting unemployment benefits?}
@@ -201,17 +202,20 @@ Is the user Unemployed?
     }
   ]
 ]
+--]
 
-
+[-->prtEligibileMinorTest<
 [>eligibleMinorTest< section:
   {title: Minor Eligibility Test}
   [todo: implement minor eligibility test]
 ]
+--]
 
 <*********
 <* Qualification Period
 *********>
-[>qualification-period< section:
+[-->prtQualificationPeriod<
+[>prtQualificationPeriod< section:
   {title: Qualification Period}
   [ask:
     {text: During the last 18 months, were unemployment insurance fees paid on your behalf for at least 12 months?} <-- todo: improve wording
@@ -275,3 +279,4 @@ Is the user Unemployed?
   }]
   [set: qualificationPeriodCompleted=No] <-- All alleviations tested for, and for no avail.
 ]
+--]

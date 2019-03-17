@@ -1,0 +1,1 @@
+Are you a woman who served at least 6 months and got married within 30 days of your actual discharge?

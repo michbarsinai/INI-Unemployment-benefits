@@ -1,0 +1,1 @@
+Were you discharged in within the last year?
