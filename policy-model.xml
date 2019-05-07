@@ -1,6 +1,6 @@
 <policy-model>
   <title>Israeli Unemployment Benefits</title>
-  <version>0.2</version>
+  <version>0.3</version>
   <date>2017-04-23</date>
   <keywords>social policy, general</keywords>
   <authors>
@@ -12,7 +12,7 @@
     </person>
   </authors>
   <model answers-order="yes-first">
-    <space root="DataTags">Israel-NI.ts</space>
+    <space root="INIUnemployment">Israel-NI.pspace</space>
     <graph>Israel-NI.dg</graph>
   </model>
   <references>

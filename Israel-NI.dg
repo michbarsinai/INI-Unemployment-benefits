@@ -6,7 +6,7 @@ Is the user covered?
 [>coverage-resident< ask:
   {text: Are you a resident of Israel?}
   {answers:
-    {no: [reject: Only Israeli residents are eligible.] }
+    {no: [>rej-residentsOnly< reject: Only Israeli residents are eligible.] }
     {yes:
       [>coverage-age< ask:
         {text: Are you over 18?}
