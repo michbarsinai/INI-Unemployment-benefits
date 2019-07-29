@@ -11,8 +11,7 @@ insuranceStatus: one of NotCovered [Not insured under Israeli law],
 gender: one of Male, Female.
 ageGroup: one of Minor, WorkForce, Pension.
 
-coverCause [Why is the applicant eligible]: some of MilitaryService, NationalService,
-                                                    Residence, Employment.
+coverCause [Why is the applicant eligible]: some of MilitaryService, NationalService, Residence, Employment.
 
 eligibility: one of No, Yes.
 qualificationPeriodCompleted: one of No, Yes.

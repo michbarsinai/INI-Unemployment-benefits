@@ -215,7 +215,7 @@ Is the user Unemployed?
 <* Qualification Period
 *********>
 [-->prtQualificationPeriod<
-[>prtQualificationPeriod< section:
+[>secQualificationPeriod< section:
   {title: Qualification Period}
   [ask:
     {text: During the last 18 months, were unemployment insurance fees paid on your behalf for at least 12 months?} <-- todo: improve wording
